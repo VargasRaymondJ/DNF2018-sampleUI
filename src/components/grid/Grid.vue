@@ -4,7 +4,7 @@
         class="ag-theme-material"
         :gridOptions="gridOptions"
         :columnDefs="columnDefs"
-        :rowData="rowData">
+        :rowData="rows">
     </ag-grid-vue>
     
 </template>
@@ -38,7 +38,6 @@ export default {
                 {headerName: 'Name', field: 'name'},
                 {headerName: 'Species', field: 'species'}
             ];
-            this.rowData = this.rows;
         },
 }
 </script>
