@@ -7,7 +7,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <router-link to="/dogs" tag="li" class="nav-item"><a class="nav-link js-scroll-trigger">Dogs</a></router-link>
+            <router-link to="/caps" tag="li" class="nav-item"><a class="nav-link js-scroll-trigger">Washington Caps</a></router-link>
 
 
             <li class="nav-item">

@@ -3,9 +3,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Available dogs</h2>
+            <h2>Washington Capitals</h2>
             <hr>
-            <app-grid :rows="mammals"></app-grid>
+            <app-grid :rows="caps"></app-grid>
           </div>
         </div>
       </div>
@@ -17,7 +17,7 @@ import Grid from './grid/Grid';
 export default {
     data()  {
         return {
-            mammals: [],
+            caps: []
         }
     },
     components: {
@@ -25,9 +25,9 @@ export default {
     },
     methods: {
         foo: function() {
-            return this.$http.get('http://localhost:4040/v1/mammals')
+            return this.$http.get('http://localhost:8081/caps')
             .then(res => {
-                this.mammals=res.data;
+                this.caps=res.data;
             });
         }
     },

@@ -1,6 +1,6 @@
 <template>
 
-    <ag-grid-vue style="width: 500px; height: 250px;"
+    <ag-grid-vue style="width: 750px; height: 320px;"
         class="ag-theme-material"
         :gridOptions="gridOptions"
         :columnDefs="columnDefs"
@@ -28,15 +28,14 @@ export default {
 },
     beforeMount: function() {
 
-        console.log(this.rows)
+// Can't load this in as a prop, as it's not defined here yet
             this.columnDefs = [
+                {headerName: 'Position', field: 'pos'},
+                {headerName: 'Player', field: 'player'},
                 {headerName: 'Age', field: 'age'},
-                {headerName: 'Breed', field: 'breed'},
-                {headerName: 'Coloring', field: 'coloring'},
-                {headerName: 'Date', field: 'date'},
-                {headerName: 'ID', field: 'id'},
-                {headerName: 'Name', field: 'name'},
-                {headerName: 'Species', field: 'species'}
+                {headerName: 'Quickstats', field: 'summary'},
+                {headerName: 'Weight', field: 'weight'},
+                {headerName: 'Birth Date', field: 'birthdate'}
             ];
         },
 }
