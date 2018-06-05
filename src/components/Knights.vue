@@ -3,9 +3,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Washington Capitals</h2>
+            <h2>Vegas Golden Knights</h2>
             <hr>
-            <app-grid :rows="caps"></app-grid>
+            <app-grid :rows="knights"></app-grid>
           </div>
         </div>
       </div>
@@ -14,11 +14,10 @@
 
 <script>
 import Grid from './grid/Grid';
-
 export default {
     data()  {
         return {
-            caps: [],
+            knights: []
         }
     },
     components: {
@@ -28,9 +27,9 @@ export default {
         foo: function() {
             return this.$http.get('/static/config/env.json')
             .then(res => {
-                this.$http.get(res.data.api + '/caps')
+                this.$http.get(res.data.api + '/knights')
                 .then(data => {
-                    this.caps=data.data
+                    this.knights=data.data
                 })
             });
         }

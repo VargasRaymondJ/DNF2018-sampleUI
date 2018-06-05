@@ -8,6 +8,9 @@
           </div>
         </div>
       </div>
+      <br>
+      <img src="../../assets/sdp.png" alt="SDP slide">
+
     </section>
 </template>
 
@@ -21,5 +24,13 @@ export default {
     section {
         padding: 150px 0;
     }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* width: 950px;
+    height: auto; */
 
+  }
 </style>

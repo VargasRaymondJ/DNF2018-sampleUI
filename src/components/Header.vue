@@ -8,13 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <router-link to="/caps" tag="li" class="nav-item"><a class="nav-link js-scroll-trigger">Washington Caps</a></router-link>
-
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Control</a>
-            </li>
-
-
+            <router-link to="/knights" tag="li" class="nav-item"><a class="nav-link js-scroll-trigger">Vegas Golden Knights</a></router-link>
           </ul>
         </div>
       </div>
