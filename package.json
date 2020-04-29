@@ -15,7 +15,7 @@
     "ag-grid": "^17.1.1",
     "ag-grid-vue": "^17.1.0",
     "bootstrap": "^4.1.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.3",
     "vue": "^2.5.2",
     "vue-resource": "^1.5.1",
